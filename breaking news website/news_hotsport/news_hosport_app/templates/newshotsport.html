@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2078405143106625"
+     crossorigin="anonymous"></script>
+	<meta charset="utf-8">
+	<title>Daily Breaking News</title>
+	<style>
+		p{
+			font-size:70px;
+		}
+		.top{
+			font-size:100px;
+		}
+	</style>
+
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<!-- Optional theme -->
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-6N18T82ZXF"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-6N18T82ZXF');
+</script>
+<meta name="google-site-verification" content="0QPV3m1jB0pOAKffbxYt9hiHJwrjIOqz5wK1b4I5J7k" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+	<div class="jumbotron" style="color:black">
+
+	<h1 style ="color:white">
+    Daily Top Breaking News Coming To you live Accross the World
+	</h1>
+
+	</div>
+
+
+	<div class="container">
+	{% for new, des, i in mylist %}
+			<img src="{{ i }}" alt="">
+			<h1 class="top">news:</h1><p> {{ new }}</p>
+			{{ value|linebreaks }}
+
+			<h1 class="top">description:</h1><p>{{ des }}</p>
+			{{ value|linebreaks }}
+
+	{% endfor %}
+
+    <hr>
+    <br><br>
+    <p>By : Odiwuor Lameck</p>
+    <p>Email Address: odiwuorlameck2019@gmail.com</p>
+    <p>copyright (c) 2022</p>
+    <br>
+    <hr>
+	</div>
+
+
+
+</body>
+</html>
